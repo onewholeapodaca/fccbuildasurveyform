@@ -1,0 +1,85 @@
+/*{
+  border: solid red 1px;
+}*/
+
+body {
+  width: 100%;
+  /*height: 100vh;*/
+  margin: 0;
+  
+  color: #f5f6f7;
+  font-family: font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  background: no-repeat center url("https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+}
+
+header {
+  width: 80vh;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 1em;
+  background-color: rgba(27, 27, 50, 0.9);
+  border-radius: 25px;
+}
+
+h1, h2, p {
+  margin: 0.2em auto;
+  text-align: center;
+}
+
+h1 {
+  border-bottom: 3px solid #3b3b4f; 
+}
+
+form {
+  width: 60vh;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 1em auto;
+  padding: 2em;
+  background-color: rgba(27, 27, 50, 0.9);
+  border-radius: 25px;
+  
+}
+
+#number {
+  border-bottom: 3px solid #3b3b4f;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #fff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  display: inline;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
