@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet"> </head>
+<body>
+<header><h1 id="title">Generic Medical Center</h1>
+<h2>Data Request Form</h2>
+<p id="description">Use this form to request patient data (deidentified or not) for analysis or patient care.</p>
+
+<p id="required-info">* Required Information</p></header>
+<!--<fieldset>-->
+<form id="survey-form">
+  <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name*"/></label>
+  <label id="email-label">Email<input id="email" type="email" required placeholder="Enter your email*"/></label>
+  <label id="number-label">Number of Records Needed<input id="number" type="number" min="0" max="100000" placeholder="Enter your extension*"/></label>
+
+  <label id="number-label">Extension<input id="number" type="tel" minlength="4" maxlength="6" placeholder="Enter your extension*"/></label>
+<!--</fieldset>-->
+<!--<fieldset>-->
+  <label>Reason for request
+    <select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="Research">Research</option>
+      <option value="Patient-care">Patient Care</option>
+    </select>
+  </label>
+
+  <label>Deidentify Data?* <input type="radio" name="needphi" value="1" class="inline"/>Yes
+  <input type="radio" name="needphi" value="0" class="inline"/>No</label>
+
+  <label>
+    <textarea name="" rows="3" cols="30" placeholder="Purpose of Request: A specific purpose may help us determine the most appropriate data set to send you. Please include who and what it is for, and how it will be used. *"></textarea>
+  </label>
+
+  <label>
+    <textarea name="" rows="3" cols="30" placeholder="Please provide a detailed description of the data requested and its context, including any selection criteria (examples: first-time freshmen, chemistry majors, departments/colleges, etc.) *"></textarea>
+  </label>
+  <!--</fieldset>-->
+  <label>   <input type="checkbox" name="" required value="1" class="inline"/>I agree to use the requested data only for legitimate business purposes, restricting my usage to my designated professional responsibilities. 
+	</label>
+
+  <label>   <input type="checkbox" name="" required value="1" class="inline"/>I agree protect the confidentiality, integrity, and accessibility of the requested data. 
+	</label>
+  
+
+  <input type="submit" value="Submit" id="submit"/>
+</form>
+
+<!-- This image is placed here only to save the address in an accessible location, likely will be used as a background image.  Image downloaded to folder on desktop for when the form is hosted somewhere -->
+<!--"https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"-->
+</body>
+
+</html>
